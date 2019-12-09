@@ -19,8 +19,8 @@ events for use with the perf_events Linux kernel interface.
 
 
 %package devel
-Provides:       %{name}%{?_isa} = %{version}-%{release}
-Obsoletes:      %{name}%{?_isa} <= %{version}-%{release}
+Provides:       %{name}-static = %{version}-%{release}
+Obsoletes:      %{name}-static <= %{version}-%{release}
 Summary:        Library to provide perf_events in linux
 %description    devel
 Library package used for development for perf_events interface.
