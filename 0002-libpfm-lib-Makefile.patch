@@ -1,0 +1,11 @@
+--- libpfm-4.10.1/lib/Makefile.old	2020-03-18 14:33:35.048208359 +0800
++++ libpfm-4.10.1/lib/Makefile	2020-03-18 14:35:00.276038441 +0800
+@@ -33,7 +33,7 @@ ifeq ($(SYS),Linux)
+ SRCS += pfmlib_perf_event_pmu.c pfmlib_perf_event.c pfmlib_perf_event_raw.c
+ endif
+ 
+-CFLAGS+=-D_REENTRANT -I. -fvisibility=hidden
++CFLAGS+=-D_REENTRANT -I. -fvisibility=hidden -fstack-protector-strong
+ 
+ #
+ # list all library support modules
