@@ -10,7 +10,8 @@ URL:            http://perfmon2.sourceforge.net/
 
 Source0:        http://sourceforge.net/projects/perfmon2/files/libpfm4/%{name}-%{version}.tar.gz
 
-Patch1:         0001-libpfm-python3-setup.patch
+Patch0001:      0001-libpfm-python3-setup.patch
+Patch0002:      0002-libpfm-lib-Makefile.patch
 BuildRequires:  python3 python3-devel python3-setuptools swig gcc
 
 %description
