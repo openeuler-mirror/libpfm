@@ -3,7 +3,7 @@
 
 Name:           libpfm
 Version:        4.10.1
-Release:        6
+Release:        7
 Summary:        A user library help setup performance events for use with the perf_events Linux kernel interface. 
 License:        MIT
 URL:            http://perfmon2.sourceforge.net/
@@ -68,6 +68,8 @@ make PREFIX=$RPM_BUILD_ROOT%{_prefix} LIBDIR=$RPM_BUILD_ROOT%{_libdir} \
 
 
 %changelog
+* Wed Mar 18 2020 yinzhenling <yinzhenling2@huawei.com> - 4.10.1-7
+- add make option
 
 * Sun Dec 1 2019  jiaxiya <jiaxiyajiaxiya@168.com> - 4.10.1-6 
 - Package init
