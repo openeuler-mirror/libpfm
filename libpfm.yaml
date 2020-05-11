@@ -1,0 +1,4 @@
+version_control: git
+src_repo:  https://git.code.sf.net/p/perfmon2/perfmon2
+tag_prefix: libpfm- 
+seperator: .
