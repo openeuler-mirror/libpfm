@@ -3,7 +3,7 @@
 
 Name:           libpfm
 Version:        4.10.1
-Release:        8
+Release:        9
 Summary:        A user library help setup performance events for use with the perf_events Linux kernel interface. 
 License:        MIT
 URL:            http://perfmon2.sourceforge.net/
@@ -12,6 +12,7 @@ Source0:        http://sourceforge.net/projects/perfmon2/files/libpfm4/%{name}-%
 
 Patch0001:      0001-libpfm-python3-setup.patch
 Patch0002:      0002-libpfm-lib-Makefile.patch
+Recommends:	%{name}-help = %{version}-%{release}
 BuildRequires:  python3 python3-devel python3-setuptools swig gcc
 
 %description
@@ -68,6 +69,9 @@ make PREFIX=$RPM_BUILD_ROOT%{_prefix} LIBDIR=$RPM_BUILD_ROOT%{_libdir} \
 
 
 %changelog
+* Thu Nov 12 2020 xinghe <xinghe1@huawei.com> - 4.10.1-9
+- add help for Recommends
+
 * Tue Aug 18 2020 senlin<xiasenlin1@huawei.com> - 4.10.1-8
 - add release for update
 
