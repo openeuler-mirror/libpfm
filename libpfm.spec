@@ -2,8 +2,8 @@
 %define python_prefix %(python3 -c "import sys; print (sys.prefix)")
 
 Name:           libpfm
-Version:        4.10.1
-Release:        7
+Version:        4.11.0
+Release:        1
 Summary:        A user library help setup performance events for use with the perf_events Linux kernel interface. 
 License:        MIT
 URL:            http://perfmon2.sourceforge.net/
@@ -68,6 +68,9 @@ make PREFIX=$RPM_BUILD_ROOT%{_prefix} LIBDIR=$RPM_BUILD_ROOT%{_libdir} \
 
 
 %changelog
+* Thu Jun 16 2022 SimpleUpdate Robot <tc@openeuler.org> - 4.11.0-1
+- Upgrade to version 4.11.0
+
 * Wed Mar 18 2020 yinzhenling <yinzhenling2@huawei.com> - 4.10.1-7
 - add make option
 
